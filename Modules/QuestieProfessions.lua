@@ -97,6 +97,23 @@ QuestieProfessions.professionKeys = {
     RIDING = 762,
 }
 
+QuestieProfessions.professionKeyToSortId = {
+    [QuestieProfessions.professionKeys.FIRST_AID] = -129,
+    [QuestieProfessions.professionKeys.BLACKSMITHING] = -164,
+    [QuestieProfessions.professionKeys.LEATHERWORKING] = -165,
+    [QuestieProfessions.professionKeys.ALCHEMY] = -171,
+    [QuestieProfessions.professionKeys.HERBALISM] = -182,
+    [QuestieProfessions.professionKeys.COOKING] = -185,
+    [QuestieProfessions.professionKeys.MINING] = -186,
+    [QuestieProfessions.professionKeys.TAILORING] = -197,
+    [QuestieProfessions.professionKeys.ENGINEERING] = -202,
+    [QuestieProfessions.professionKeys.ENCHANTING] = -333,
+    [QuestieProfessions.professionKeys.FISHING] = -356,
+    [QuestieProfessions.professionKeys.SKINNING] = -393,
+    [QuestieProfessions.professionKeys.JEWELCRAFTING] = -755,
+    [QuestieProfessions.professionKeys.RIDING] = -762,
+}
+
 _QuestieProfessions.professionNames = {
     [QuestieProfessions.professionKeys.FIRST_AID] = "First Aid",
     [QuestieProfessions.professionKeys.BLACKSMITHING] = "Blacksmithing",
