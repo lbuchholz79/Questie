@@ -115,6 +115,7 @@ function _QuestEventHandler:HandleQuestAccepted(questId)
     QuestieHash:AddNewQuestHash(questId)
     QuestieQuest:AcceptQuest(questId)
     QuestieJourney:AcceptQuest(questId)
+    QuestieAnnounce:AcceptedQuest(questId)
 
     return true
 end
@@ -150,6 +151,7 @@ function _QuestEventHandler:QuestTurnedIn(questId, xpReward, moneyReward)
     QuestieHash:RemoveQuestHash(questId)
     QuestieQuest:CompleteQuest(questId)
     QuestieJourney:CompleteQuest(questId)
+    QuestieAnnounce:CompletedQuest(questId)
 end
 
 --- Fires when a quest is removed from the quest log. This includes turning it in and abandoning it.
@@ -189,6 +191,7 @@ function _QuestEventHandler:MarkQuestAsAbandoned(questId)
         QuestieHash:RemoveQuestHash(questId)
         QuestieQuest:AbandonedQuest(questId)
         QuestieJourney:AbandonQuest(questId)
+        QuestieAnnounce:AbandonedQuest(questId)
         questLog[questId] = nil
     end
 end
